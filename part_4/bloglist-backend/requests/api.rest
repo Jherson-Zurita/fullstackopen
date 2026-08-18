@@ -1,0 +1,48 @@
+### Crear un usuario
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "name": "Matti Luukkainen",
+  "password": "salainen"
+}
+
+### Listar usuarios
+GET http://localhost:3003/api/users
+
+### Login
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "password": "salainen"
+}
+
+### Listar blogs
+GET http://localhost:3003/api/blogs
+
+### Crear un blog (requiere token obtenido en /api/login)
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer PEGA_AQUI_EL_TOKEN
+
+{
+  "title": "Full Stack Open",
+  "author": "University of Helsinki",
+  "url": "https://fullstackopen.com",
+  "likes": 100
+}
+
+### Eliminar un blog (requiere token del creador)
+DELETE http://localhost:3003/api/blogs/ID_DEL_BLOG
+Authorization: Bearer PEGA_AQUI_EL_TOKEN
+
+### Actualizar likes de un blog
+PUT http://localhost:3003/api/blogs/ID_DEL_BLOG
+Content-Type: application/json
+
+{
+  "likes": 101
+}
