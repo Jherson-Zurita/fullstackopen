@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  color: #1a1a2e;
+}
+
+#root {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+/* 5.29: formularios (login y crear blog) */
+form {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 320px;
+  margin-top: 10px;
+}
+
+form div {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+form input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button,
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  background: #3949ab;
+  color: white;
+  font-size: 0.95rem;
+  transition: background 0.15s ease-in-out;
+}
+
+form button:hover,
+button:hover {
+  background: #283593;
+}
+
+/* 5.31: componente de blog individual */
+.blog {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.blogSummary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blogDetails {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 6px 12px;
+  border-bottom: 1px solid #eee;
+}

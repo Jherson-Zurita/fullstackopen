@@ -1,0 +1,12 @@
+{
+  "name": "bloglist-e2e-cypress",
+  "version": "1.0.0",
+  "description": "Pruebas end-to-end con Cypress para bloglist-frontend",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^15.20.1"
+  }
+}
